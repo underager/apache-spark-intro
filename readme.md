@@ -8,8 +8,8 @@
 
 ### What is Apache Spark ?
 
-    - Apache Spark is an open-source, distributed computing system designed for big data processing.
-    - Spark distributes data and computations across multiple nodes in a cluster. It uses a master-slave architecture, where the driver program acts as the master and cluster nodes act as workers. The driver program coordinates tasks and distributes work among the executors running on worker nodes.
+- Apache Spark is an open-source, distributed computing system designed for big data processing.
+- Spark distributes data and computations across multiple nodes in a cluster. It uses a master-slave architecture, where the driver program acts as the master and cluster nodes act as workers. The driver program coordinates tasks and distributes work among the executors running on worker nodes.
 
 ![SparkArchitecture](Images/SparkArchitecture.png)
 
@@ -32,7 +32,7 @@
     - **Transformations** : Lazy operations that create a new RDD from an existing one (e.g., map, filter).
     - **Actions** : Operations that trigger the execution of transformations and return a result or write data to external storage (e.g., collect, saveAsTextFile).
 
-    ![RDD Version Change](RDDVersionChange.png)
+    ![RDD Version Change](Images/RDDVersionChange.png)
 
     ```Python
     
