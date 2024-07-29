@@ -2,11 +2,11 @@
 
 ## Contents
 
-    - What is Apache Spark ?
-    - Data structures in Apache Spark
-    - How data is processed.
-    - Jobs & Stages
-    - Submit Application.
+- What is Apache Spark ?
+- Data structures in Apache Spark
+- How data is processed.
+- Jobs & Stages
+- Submit Application.
 
 ---
 
