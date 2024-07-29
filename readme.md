@@ -3,6 +3,9 @@
 ## Contents
 
     - What is Apache Spark ?
+    - Data structures in Apache Spark
+    - How data is processed.
+    - Jobs & Stages
 
 ---
 
@@ -158,3 +161,22 @@
     result = df.filter(df["age"] > 21).groupBy("country").count().orderBy("count", ascending=False)
     result.show()
 ```
+
+### Submitting Application in Spark.
+
+- Submitting an application in Apache Spark is the process of deploying a Spark program to a Spark cluster to be executed.
+- This step is crucial because it leverages the distributed computing capabilities of Spark to process large datasets efficiently.
+- By submitting application in Apache Spark, we can achieve following.
+- **Distributed Processing**:
+  - **Efficiency** : Spark distributes the data and computations across a cluster of machines. This allows for parallel processing, which can handle large datasets much more quickly than a single machine.
+  - **Scalability** : By submitting an application to a Spark cluster, you can scale your application horizontally. This means you can add more nodes to the cluster to handle larger datasets or more complex computations.
+- **Fault Tolerance**: Incase of failure due to Directed Acyclic Graph pattern, failed node can be recomputed.
+- **Resource Management**:
+  - **Resource Allocation** : Submitting an application to a cluster manager (like YARN, Mesos, or Kubernetes) allows you to take advantage of resource management features. These managers allocate CPU, memory, and other resources to different tasks, optimizing resource usage and improving overall performance.
+  - **Load Balancing** : Cluster managers can distribute tasks across nodes to balance the load, preventing any single node from becoming a bottleneck.
+- **Centralized Management and Monitoring**:
+  - **Centralized Control**: When you submit an application to a cluster, you can centrally manage and monitor it. Spark provides a Web UI for monitoring the progress and performance of your application, making it easier to identify and resolve issues.
+  - **Job Scheduling**: Cluster managers can schedule and manage multiple Spark applications, allowing for more efficient use of cluster resources.
+- **Integration with Big Data Ecosystem** :
+  - **Data Integration**: Spark integrates seamlessly with various big data tools and storage systems like HDFS, Cassandra, HBase, and S3. Submitting your application to a Spark cluster allows it to read from and write to these systems efficiently.
+  - **Unified Analytics**: Spark supports multiple analytics tasks, including batch processing, interactive querying, real-time stream processing, and machine learning. By submitting an application, you can leverage Spark’s unified analytics engine to perform complex data processing workflows.
