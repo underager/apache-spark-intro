@@ -6,6 +6,7 @@
     - Data structures in Apache Spark
     - How data is processed.
     - Jobs & Stages
+    - Submit Application.
 
 ---
 
